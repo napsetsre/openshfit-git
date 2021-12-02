@@ -26,15 +26,14 @@ Inspect the operator version:
 oc describe packagemanifests openshift-gitops-operator -n openshift-marketplace
 ```
 
-```shell
-oc get subscriptions.operators.coreos.com -n openshift-operators
-```
+Install the openshift-gitops-operator:
 
 ```shell
-oc apply -n openshift-operators -f- <<EOF
-
-EOF
+oc apply -f gitops/subscription.yaml
 ```
+
+> Note that a OperatorGroup aready exists in the openshift-operators namespace.
+
 
 ## Argo CD Features
 
