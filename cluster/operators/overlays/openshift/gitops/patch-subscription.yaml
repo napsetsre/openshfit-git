@@ -1,0 +1,6 @@
+- op: replace
+  path: /metadata/name
+  value: openshift-gitops-operator
+- op: replace
+  path: /metadata/namespace
+  value: openshift-operators

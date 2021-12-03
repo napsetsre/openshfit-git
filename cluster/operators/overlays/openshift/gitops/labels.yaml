@@ -1,0 +1,9 @@
+apiVersion: builtin
+kind: LabelTransformer
+metadata:
+  name: labels
+labels:
+  operators.coreos.com/openshift-gitops-operator.openshift-operators: ""
+fieldSpecs:
+  - path: metadata/labels
+    create: true
