@@ -9,3 +9,6 @@ patches:
   - path: patch-role-binding.yaml
     target:
       kind: RoleBinding
+  - path: patch-console-link.yaml
+    target:
+      kind: ConsoleLink
