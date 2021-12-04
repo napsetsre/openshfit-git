@@ -3,6 +3,12 @@ kind: Kustomization
 bases:
   - ../../bases
 patches:
+  - path: patch-argocd.yaml
+    target:
+      kind: ArgoCD
+  - path: patch-application.yaml
+    target:
+      kind: Application
   - path: patch-namespace.yaml
     target:
       kind: Namespace
@@ -12,6 +18,3 @@ patches:
   - path: patch-console-link.yaml
     target:
       kind: ConsoleLink
-  - path: patch-argocd.yaml
-    target:
-      kind: ArgoCD

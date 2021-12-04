@@ -1,0 +1,22 @@
+- op: replace
+  path: /metadata
+  value:
+    name: app-spring-petclinic
+    namespace: spring-petclinic
+- op: add
+  path: /spec
+  value:
+    destination:
+      namespace: spring-petclinic
+      server: https://kubernetes.default.svc
+    project: default
+    source:
+      directory:
+        recurse: true
+      path: applications/overlays/spring-petclinic
+      repoURL:  https://github.com/napsetsre/openshift-gitops.git
+      targetRevision: argocd
+    syncPolicy:
+      automated:
+        prune: true
+        selfHeal: true
