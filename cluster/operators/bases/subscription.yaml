@@ -3,11 +3,4 @@ kind: Subscription
 metadata:
   name: patch-metadata-name
   namespace: patch-metadata-namespace
-spec:
-  channel: stable
-  installPlanApproval: Automatic
-  name: openshift-gitops-operator
-  source: redhat-operators
-  sourceNamespace: openshift-marketplace
-  startingCSV: openshift-gitops-operator.v1.3.0
 
