@@ -12,3 +12,6 @@ patches:
   - path: patch-console-link.yaml
     target:
       kind: ConsoleLink
+  - path: patch-argocd.yaml
+    target:
+      kind: ArgoCD

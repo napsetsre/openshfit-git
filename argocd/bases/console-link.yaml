@@ -1,4 +1,5 @@
 apiVersion: console.openshift.io/v1
 kind: ConsoleLink
 metadata:
-  name: patchme-metadata-name
+  name: patch-metadata-name
+  namespace: patch-metadata-name

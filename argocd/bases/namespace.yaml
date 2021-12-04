@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: patch-me
+  name: patch-metadata-name
 spec:
   finalizers:
     - kubernetes
