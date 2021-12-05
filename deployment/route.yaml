@@ -4,6 +4,7 @@ metadata:
   labels:
     app: spring-petclinic
   name: spring-petclinic
+  namespace: spring-petclinic
 spec:
   port:
     targetPort: 8080-tcp

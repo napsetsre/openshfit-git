@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ArgoCD
 metadata:
-  name: patch-metadata-name
-  namespace: patch-metadata-namespace
+  name: openshift-gitops-argocd
+  namespace: openshift-gitops
 spec:
   server:
     route:

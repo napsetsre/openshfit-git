@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: patch-metadata-name
+  name: spring-petclinic
 spec:
   finalizers:
     - kubernetes
