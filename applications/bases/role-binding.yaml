@@ -1,8 +1,8 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: spring-petclinic
-  namespace: spring-petclinic
+  name: patchme-metadata-name
+  namespace: patchme-metadata-namespace
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

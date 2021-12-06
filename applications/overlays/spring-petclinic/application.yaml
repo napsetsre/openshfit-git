@@ -11,6 +11,6 @@ spec:
   source:
     directory:
       recurse: true
-    path: deployment
+    path: deployments
     repoURL:  https://github.com/napsetsre/openshift-gitops.git
     targetRevision: argocd
