@@ -4,7 +4,6 @@ bases:
   - ../../bases
 resources:
   - application.yaml
-  - console-link.yaml
 patches:
   - path: patch-namespace.yaml
     target:
