@@ -14,3 +14,7 @@ spec:
     path: deployments
     repoURL:  https://github.com/napsetsre/openshift-gitops.git
     targetRevision: argocd
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
