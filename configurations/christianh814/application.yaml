@@ -1,19 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-spring-petclinic
+  name: helm-app
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: spring-petclinic
+    namespace: openshift-gitops
     server: https://kubernetes.default.svc
   project: default
   source:
-    directory:
-      recurse: true
-    path: app
-    repoURL: https://github.com/redhat-developer/openshift-gitops-getting-started.git
-    targetRevision: main
+    path: helm/argo-app
+    repoURL: https://github.com/christianh814/gitops-examples
+    targetRevision: master
   syncPolicy:
     automated:
       prune: true

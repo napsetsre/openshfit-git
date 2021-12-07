@@ -1,4 +1,0 @@
-- op: replace
-  path: /metadata
-  value:
-    name: spring-petclinic
