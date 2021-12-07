@@ -1,0 +1,5 @@
+- op: replace
+  path: /metadata
+  value:
+    name: spring-petclinic
+    namespace: spring-petclinic
