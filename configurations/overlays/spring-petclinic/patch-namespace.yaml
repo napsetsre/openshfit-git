@@ -1,3 +1,4 @@
 - op: replace
-  path: /metadata/name
-  value: spring-petclinic
+  path: /metadata
+  value:
+    name: spring-petclinic
