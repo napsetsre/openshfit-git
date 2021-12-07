@@ -1,0 +1,5 @@
+- op: replace
+  path: /metadata
+  value:
+    name: guest-book
+    namespace: guest-book
