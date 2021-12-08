@@ -1,0 +1,9 @@
+- op: replace
+  path: /metadata/name
+  value: app-pricelist
+- op: replace
+  path: /spec/source
+  value:
+    path: pricelist
+    repoURL: https://github.com/christianh814/gitops-examples.git
+    targetRevision: master
