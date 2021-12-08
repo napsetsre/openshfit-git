@@ -27,6 +27,11 @@ kustomize build operators/overlays/openshift-gitops | oc apply -f-
 
 > Note that a OperatorGroup already exists in the `openshift-operators` namespace.
 
+
+Give the serviceAccount permission to admin the cluster.
+```shell
+oc adm policy add-cluster-role-to-user cluster-admin -z openshift-gitops-argocd-application-controller -n openshift-gitops
+```
 ## Cluster Argo CD Default Instance
 OpenShift GitOps by default installs an Argo CD instance for the cluster.
 
@@ -39,9 +44,12 @@ oc get argocds.argoproj.io -n openshift-gitops
 
 Install Argo CD application configurations:
 ```shell
-kustomize build configurations/overlays/spring-petclinic | oc apply -f-
+kustomize build configurations/pricelist | oc apply -f-
+```
+
+```shell
+kustomize build configurations/quarkus-app | oc apply -f-
 ```
 
 #### Application Deployment
 ArgoCD references your application deployment in GitHub.
-
