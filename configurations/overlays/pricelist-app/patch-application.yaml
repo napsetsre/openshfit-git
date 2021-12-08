@@ -1,7 +1,10 @@
 - op: replace
   path: /metadata/name
-  value: app-pricelist
-- op: replace
+  value: pricelist-app
+- op: add
+  path: /spec/destination/namespace
+  value: pricelist-app
+- op: add
   path: /spec/source
   value:
     path: pricelist

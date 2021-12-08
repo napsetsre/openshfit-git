@@ -1,9 +1,22 @@
 - op: replace
   path: /metadata/name
-  value: app-pricelist
-- op: replace
+  value: quarkus-app
+- op: add
+  path: /spec/destination/namespace
+  value: quarkus-app
+- op: add
   path: /spec/source
   value:
-    path: pricelist
-    repoURL: https://github.com/christianh814/gitops-examples.git
-    targetRevision: master
+    helm:
+      parameters:
+        - name: build.enabled
+          value: "false"
+        - name: deploy.route.tls.enabled
+          value: "true"
+        - name: image.name
+          value: quay.io/ablock/gitops-helm-quarkus
+    chart: quarkus
+    repoURL: https://redhat-developer.github.io/redhat-helm-charts
+    targetRevision: 0.0.3
+
+
