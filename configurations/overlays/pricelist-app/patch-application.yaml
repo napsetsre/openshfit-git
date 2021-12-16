@@ -2,9 +2,6 @@
   path: /metadata/name
   value: pricelist-app
 - op: add
-  path: /spec/destination/namespace
-  value: pricelist-app
-- op: add
   path: /spec/source
   value:
     path: pricelist

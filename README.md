@@ -1,3 +1,5 @@
+{google_docs}http://www.example.com/docs/document.pdf{/google_docs}
+
 # GitOps
 GitOps is a declarative way to implement continuous deployment.
 
