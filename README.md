@@ -41,7 +41,7 @@ oc get argocds.argoproj.io -n openshift-gitops
 
 Install Argo CD application configurations:
 ```shell
-kustomize build configurations/overlays/pricelist | oc apply -f-
+kustomize build configurations/overlays/pricelist-app | oc apply -f-
 ```
 
 ```shell
